@@ -16,13 +16,13 @@ public class JpaMain {
 
         try {
             //비영속
-            Member member = new Member(3L, "member3");
+//            Member member = new Member(3L, "member3");
 //            member.setId(3L);
 //            member.setName("HelloB");
             //영속
-            em.persist(member);
+//            em.persist(member);
 
-            em.flush();
+//            em.flush();
 
 //            Member findMember = em.find(Member.class, 1L);
 //            findMember.setName("Hello1");
