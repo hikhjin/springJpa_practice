@@ -7,14 +7,15 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
-public class Member {
+public class Member_ {
     @Id // pk 매핑
+    @GeneratedValue(strategy = GenerationType.AUTO) // auto_increment
     private Long id;
     @Column(name = "name", nullable = false) // db와 객체 이름 다를 때 db 이름 따로 지정 가능 (컬럼명은 name이다)
     private String username;
     private Integer age;
     @Enumerated(EnumType.STRING) // ENUM 타입 , 꼭 STRING 타입 사용
-    private RoleType roleType;
+    private RoleType_ roleType;
     @Temporal(TemporalType.TIMESTAMP) // 날짜 타입
     private Date createdDate;
     @Temporal(TemporalType.TIMESTAMP)

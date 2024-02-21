@@ -2,9 +2,7 @@ package hellojpa;
 
 import jakarta.persistence.*;
 
-import java.util.List;
-
-public class JpaMain {
+public class JpaMain_ {
 
     public static void main(String[] args) {
 
