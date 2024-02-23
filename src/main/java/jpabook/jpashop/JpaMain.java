@@ -23,6 +23,7 @@ public class JpaMain {
             em.close();
         }
 
+        System.out.println();
         em.close();
         emf.close();
     }
