@@ -4,10 +4,9 @@ import jakarta.persistence.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.locks.Lock;
 
 @Entity
-public class Member1 {
+public class Member1 extends BaseEntity1 {
     @Id
     @GeneratedValue
     @Column(name = "MEMBER_ID")
